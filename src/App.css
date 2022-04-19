@@ -55,3 +55,7 @@ ul {
 h3:first-letter {
   text-transform: capitalize;
 }
+
+.footer {
+  color: #48484a;
+}

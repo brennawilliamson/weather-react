@@ -9,6 +9,12 @@ function App() {
   return (
     <div className="App">
       <Weather />
+      <p className="footer">
+        <a href="https://github.com/brennawilliamson/weather-react">
+          Open-source code
+        </a>{" "}
+        by Brenna Williamson
+      </p>
     </div>
   );
 }

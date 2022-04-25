@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity="New York" />
       <p className="footer">
         <a href="https://github.com/brennawilliamson/weather-react">
           Open-source code

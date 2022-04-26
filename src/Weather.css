@@ -27,7 +27,7 @@
 
 .weather-temperature strong {
   color: #ffffff;
-  font-size: 45px;
+  font-size: 42px;
 }
 
 .weather-temperature .units {
@@ -35,6 +35,10 @@
   font-size: 15px;
   top: -22px;
   color: white;
+}
+
+.fahrenheit {
+  text-decoration: none;
 }
 
 .footer {

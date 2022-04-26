@@ -27,13 +27,14 @@
 
 .weather-temperature strong {
   color: #ffffff;
-  font-size: 42px;
+  font-size: 45px;
 }
 
 .weather-temperature .units {
   position: relative;
   font-size: 15px;
   top: -22px;
+  left: 6px;
   color: white;
 }
 

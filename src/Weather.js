@@ -18,7 +18,7 @@ export default function Weather(props) {
       city: response.data.name,
       feels: response.data.main.feels_like,
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 

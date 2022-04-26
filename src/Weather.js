@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -10,7 +11,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
-      date: "Wednesday 7:00",
+      date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.name,
@@ -51,7 +52,9 @@ export default function Weather(props) {
               <h1>{weatherData.city}</h1>
               <ul>
                 <h2>
-                  <span>{weatherData.date}</span>
+                  <span>
+                    <FormattedDate date={weatherData.date} />
+                  </span>
                 </h2>
                 <h3 className="text-capitalize">{weatherData.description}</h3>
               </ul>
